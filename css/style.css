@@ -1,0 +1,173 @@
+body {
+  margin: 10px;
+  font-size: 14px;
+}
+
+#header-app {
+  margin: 0;
+}
+#header-app ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+#header-app ul img {
+  height: 50px;
+  margin: 10px;
+}
+
+#header-app h1 {
+  font-size: 4rem;
+  color: #17a2b8;
+}
+
+.menu-slider {
+  z-index: 1;
+  max-width: 500px;
+}
+.menu-slider li {
+  text-align: center;
+}
+.menu-slider a {
+  color: #e83e8c;
+  padding: 5px;
+}
+
+.menu-burger {
+  background: white;
+  z-index: 2;
+  max-width: 500px;
+  width: 100%;
+}
+.menu-burger img {
+  width: 70px;
+  cursor: pointer;
+}
+
+#header-app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-button-menu img {
+  width: 70px;
+  cursor: pointer;
+}
+
+#all-menu {
+  position: fixed;
+  flex-direction: column;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+@keyframes move-to-screan {
+  from {
+    position: fixed;
+    left: -500px;
+  }
+  to {
+    position: fixed;
+    left: 0px;
+  }
+}
+@keyframes hide-to-screan {
+  from {
+    position: fixed;
+    left: 0px;
+  }
+  to {
+    position: fixed;
+    left: -500px;
+  }
+}
+#wrapper-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.manu-card-window {
+  width: calc((100% / 4) - 30px);
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.card-body p {
+  overflow-y: hidden;
+  height: 90%;
+}
+
+.card-body img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.manu-card-window figcaption {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.manu-card-window:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+footer {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer img {
+  height: 30px;
+  margin: 0 20px;
+}
+
+#wrapper-cards-game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-window {
+  width: calc((100% / 4) - 30px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+.card-window figcaption {
+  font-size: 1.5rem;
+  color: var(--gray-dark);
+}
+
+.rotate-icon img {
+  width: 40px;
+}
+
+.wrapper-card-word {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hide-word {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
